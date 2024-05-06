@@ -1,0 +1,76 @@
+body {
+  background-color: #15141A;
+  color: white;
+  font-family: 'Rubik';
+  justify-content: center;
+  z-index: 2;
+}
+
+.center {
+  text-align: center;
+}
+
+#title {
+  padding-top: 4em;
+}
+
+.subtitle {
+  color: #999999;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.centersubtitle {
+  color: #999999;
+  font-style: italic;
+  text-align: center;
+  font-size: .75em;
+}
+
+
+/* Make the box a box */
+
+.centercontent {
+  display: flex;
+  justify-content: center;
+}
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: 916px;
+}
+
+
+.box {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 260px;
+  width: 300px;
+  background-color: #49455e22;
+  box-shadow: 0 0 6px rgba(0,0,0,0.25);
+  border-radius: 1em;
+  position: relative;
+  cursor: default;
+}
+.box:hover {
+  box-shadow: rgb(0, 115, 183) 0px 0px 6px;
+}
+
+/* Make box clickable */
+.boxlink {
+  display: block;
+  height: 12em;
+  width: 12em;
+  text-decoration: none;
+  position: absolute;
+  cursor: default;
+}
+
+/* TODO: Add the cool box hover effect with the radial gradient */
