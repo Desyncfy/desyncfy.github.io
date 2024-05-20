@@ -1,9 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   background-color: #15141A;
   color: white;
   font-family: 'Rubik';
   justify-content: center;
-  z-index: 2;
 }
 
 .center {
@@ -19,14 +22,6 @@ body {
   font-style: italic;
   font-size: 12px;
 }
-
-.centersubtitle {
-  color: #999999;
-  font-style: italic;
-  text-align: center;
-  font-size: .75em;
-}
-
 
 /* Make the box a box */
 
@@ -58,6 +53,8 @@ body {
   border-radius: 1em;
   position: relative;
   cursor: default;
+  transition: all;
+  transition-duration: 700ms;
 }
 .box:hover {
   box-shadow: rgb(0, 115, 183) 0px 0px 6px;
