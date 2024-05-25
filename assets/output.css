@@ -733,11 +733,6 @@ video {
   margin-bottom: 1rem;
 }
 
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 .mb-14 {
   margin-bottom: 3.5rem;
 }
@@ -764,10 +759,6 @@ video {
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
 }
 
 .box-border {
@@ -2316,14 +2307,6 @@ video {
 
 .no-underline {
   text-decoration-line: none;
-}
-
-.decoration-transparent {
-  text-decoration-color: transparent;
-}
-
-.decoration-\[none\] {
-  text-decoration-color: none;
 }
 
 .decoration-solid {
