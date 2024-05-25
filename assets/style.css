@@ -15,6 +15,7 @@ body {
 
 #title {
   padding-top: 4em;
+  padding-bottom: 2em;
 }
 
 .subtitle {
@@ -70,8 +71,46 @@ body {
   cursor: default;
 }
 
+.blogbox {
+  background: rgb(230,170,55);
+  background: linear-gradient(130deg, rgba(230,170,55,1) 0%, rgba(255,81,27,1) 84%);
+}
+
 /* TODO: Add the cool box hover effect with the radial gradient */
 
 .boxcolor {
   background-color: #49455e22;
+}
+
+.boxcolor-200 {
+  background-color: #22212B;
+}
+
+
+.paragraph {
+  @apply mx-auto mt-4 font-inter w-[50%] h-auto indent-10;
+}
+
+.title {
+  @apply text-3xl font-ubuntu text-center mb-8;
+}
+
+.link {
+  @apply text-sky-500 underline;
+}
+
+.popup {
+  @apply absolute scale-0 group-hover:scale-100 translate-y-10 text-white w-[45%] transition-all duration-100 origin-top;
+}
+
+.codeproperty {
+  @apply hover:bg-neutral-700 rounded-sm;
+}
+
+.minicode {
+  @apply font-jetbrains bg-neutral-700 rounded-sm px-1;
+}
+
+.bigcode {
+  @apply indent-0 bg-neutral-800 font-jetbrains p-4 rounded-lg mt-4;
 }
