@@ -88,7 +88,7 @@ body {
 
 
 .paragraph {
-  @apply mx-auto mt-4 font-inter w-[50%] h-auto indent-10;
+  @apply mx-auto mt-4 font-inter sm:w-[90%] md:w-1/2 h-auto indent-10;
 }
 
 .title {
