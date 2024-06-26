@@ -116,9 +116,9 @@ body {
 }
 
 .navbar {
-  @apply fixed bg-zinc-700 w-16 sm:scale-0 md:scale-100 h-full hover:w-36 transition-all z-20;
+  @apply fixed bg-zinc-700 w-16 md:visible invisible h-full hover:w-36 transition-all z-20;
 }
 
 .navbar-mobile {
-  @apply fixed bg-zinc-700 w-full sm:scale-100 md:scale-0 h-16 transition-all z-20;
+  @apply fixed bg-zinc-700 w-full visible md:invisible h-16 transition-all z-20;
 }
