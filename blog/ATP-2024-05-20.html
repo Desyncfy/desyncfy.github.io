@@ -1,46 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
     <head>
         <title>Desync's Blog</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="../assets/Desync.png">
-        <link href="../assets/output.css" rel="stylesheet" type="text/css" media="all">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="../assets/Desync.png" />
+        <link
+            href="../assets/output.css"
+            rel="stylesheet"
+            type="text/css"
+            media="all"
+        />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <!-- Fonts -->
-        <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css?family=Rubik"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Ubuntu"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Inter"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <!-- Desktop Navbar -->
         <nav class="navbar group">
             <ul class="text-center">
-                <li class="scale-0 group-hover:scale-100 pb-4 hover:text-black transition-all duration-500 pt-2 cursor-default">
+                <li
+                    class="scale-0 group-hover:scale-100 pb-4 hover:text-black transition-all duration-500 pt-2 cursor-default"
+                >
                     <a href="./blog">Blog</a>
                 </li>
-                <li class="scale-0 group-hover:scale-100 pb-4 hover:text-black transition-all duration-500 cursor-default">
+                <li
+                    class="scale-0 group-hover:scale-100 pb-4 hover:text-black transition-all duration-500 cursor-default"
+                >
                     <a href="./blog">Programming</a>
                 </li>
-                <li class="scale-0 group-hover:scale-100 pb-4 hover:text-black transition-all duration-500 cursor-default">
+                <li
+                    class="scale-0 group-hover:scale-100 pb-4 hover:text-black transition-all duration-500 cursor-default"
+                >
                     <a href="./blog">Other</a>
                 </li>
-                <li class="scale-0 group-hover:scale-100 hover:text-black transition-all duration-500 translate-y-[70vh] hover">
+                <li
+                    class="scale-0 group-hover:scale-100 hover:text-black transition-all duration-500 translate-y-[70vh] hover"
+                >
                     <a href="/">Home</a>
                 </li>
             </ul>
-            <ul class="group-hover:scale-0 origin-right text-center -translate-y-[150px] text-2xl">
+            <ul
+                class="group-hover:scale-0 origin-right text-center -translate-y-[150px] text-2xl"
+            >
                 <li class="pb-4">
                     <i class="bi bi-newspaper"></i>
                 </li>
                 <li class="pb-4 -translate-y-1">
                     <i class="bi bi-code-slash"></i>
                 </li>
-                <li class="">
-                    ?
-                </li>
+                <li class="">?</li>
                 <li class="translate-y-[69vh]">
                     <i class="bi bi-house"></i>
                 </li>
@@ -60,9 +88,7 @@
                     </a>
                 </li>
                 <li class="mx-auto">
-                    <a href="./blog">
-                        ?
-                    </a>
+                    <a href="./blog"> ? </a>
                 </li>
                 <li class="mx-auto">
                     <a href="/">
@@ -72,55 +98,104 @@
             </ul>
         </nav>
         <div class="h-16 visible md:hidden"></div>
-        <div class="fixed w-full scale-0 md:scale-100"><div class="text-neutral-600 text-right mr-2 top-0">May 20th, 2024</div></div>
+        <div class="fixed w-full scale-0 md:scale-100">
+            <div class="text-neutral-600 text-right mr-2 top-0">
+                May 20th, 2024
+            </div>
+        </div>
         <div class="title">About this page</div>
-        <div class="text-sm text-neutral-500 text-center pb-4">And a note on how this website will be used</div>
-        <img src="../assets/blog-images/ATP-2024-05-20.png" class="mx-auto rounded-lg" width="50%" height="50%" alt="Drawing of website">
+        <div class="text-sm text-neutral-500 text-center pb-4">
+            And a note on how this website will be used
+        </div>
+        <img
+            src="../assets/blog-images/ATP-2024-05-20.png"
+            class="mx-auto rounded-lg"
+            width="50%"
+            height="50%"
+            alt="Drawing of website"
+        />
         <div class="paragraph">
-            Making websites is fun, but kind of hard if you have no idea what you're doing, like me. I'm gonna first break down how this page was made, and at the end touch on how I'll use it.
+            Making websites is fun, but kind of hard if you have no idea what
+            you're doing, like me. I'm gonna first break down how this page was
+            made, and at the end touch on how I'll use it.
         </div>
         <div class="title">HOW THIS PAGE WAS BUILT</div>
         <div class="paragraph mb-4">
-            This website's home page comes from my <a href="https://neocities.org" class="link">Neocities</a> page, which has now been abandoned, though I might occasionally push code to it whenever I remember it. That page was developed so I could get a taste of vanilla CSS, since I normally use <a href="https://tailwindcss.com" class="link">Tailwind</a>. I thought that might be fun, but it was just time consuming! So I went back to Tailwind. (For those unaware, Tailwind CSS is a tool that just adds a bunch of CSS classes that usually do one thing which helps you build things faster. Really neat, might make a page about it at some point) Anyways, that page has 6 boxes on it, all for different websites/pages.
+            This website's home page comes from my
+            <a href="https://neocities.org" class="link">Neocities</a> page,
+            which has now been abandoned, though I might occasionally push code
+            to it whenever I remember it. That page was developed so I could get
+            a taste of vanilla CSS, since I normally use
+            <a href="https://tailwindcss.com" class="link">Tailwind</a>. I
+            thought that might be fun, but it was just time consuming! So I went
+            back to Tailwind. (For those unaware, Tailwind CSS is a tool that
+            just adds a bunch of CSS classes that usually do one thing which
+            helps you build things faster. Really neat, might make a page about
+            it at some point) Anyways, that page has 6 boxes on it, all for
+            different websites/pages.
         </div>
-            <div class="box transition-all hover:z-10">
-                <a class="boxlink" href="#"></a>
-                Example
-                <div class="subtitle">This is an example of main page boxes.</div>
-              </div>
-        <div class="paragraph">
-            Currently, I link a page I don't have anything to do with, just because I like it, as well as <a href="blog" class="link">this page</a> and the <a href="https://threejs.org" class="link">ThreeJS</a> tutorial <a href="../cube" class="link">cube</a>. My main page isn't that interesting, so I'll skip onto this page. This “blog” was basically made because I was bored, and let's go over its parts. On the left of the page, you can see a really sweet navbar that you can hover over and see options appear.
+        <div class="box transition-all hover:z-10">
+            <a class="boxlink" href="#"></a>
+            Example
+            <div class="subtitle">This is an example of main page boxes.</div>
         </div>
         <div class="paragraph">
-            The icons were sourced from <a href="https://icons.getbootstrap.com" class="link">Bootstrap</a> and everything else was done by me. I'm very happy with it. For the bar itself, the CSS looks like this:
-            <div class="bigcode mb-20"><span class="text-greaterless">&lt;</span><span class="text-element codeproperty group">
-                <div class="popup">
-                    The nav properity tells screen readers when there's a list of links.
-                    This is helpful for accessibility, but functionally works the same as a div.
-                </div>
-                nav</span>
+            Currently, I link a page I don't have anything to do with, just
+            because I like it, as well as
+            <a href="blog" class="link">this page</a> and the
+            <a href="https://threejs.org" class="link">ThreeJS</a> tutorial
+            <a href="../cube" class="link">cube</a>. My main page isn't that
+            interesting, so I'll skip onto this page. This “blog” was basically
+            made because I was bored, and let's go over its parts. On the left
+            of the page, you can see a really sweet navbar that you can hover
+            over and see options appear.
+        </div>
+        <div class="paragraph">
+            The icons were sourced from
+            <a href="https://icons.getbootstrap.com" class="link">Bootstrap</a>
+            and everything else was done by me. I'm very happy with it. For the
+            bar itself, the CSS looks like this:
+            <div class="bigcode mb-20">
+                <span class="text-greaterless">&lt;</span
+                ><span class="text-element codeproperty group">
+                    <div class="popup">
+                        The nav properity tells screen readers when there's a
+                        list of links. This is helpful for accessibility, but
+                        functionally works the same as a div.
+                    </div>
+                    nav</span
+                >
                 <span class="text-arg codeproperty group">
                     <div class="popup">
-                        Classes are used in websites to make things look nice. Tailwind provides many of these, and that's what's being used here. 
+                        Classes are used in websites to make things look nice.
+                        Tailwind provides many of these, and that's what's being
+                        used here.
                     </div>
-                    class
-                </span>=
+                    class </span
+                >=
                 <span class="text-string codeproperty group">
                     <div class="popup">
-                        A collection of classes that are linked to CSS properties. Feel free to search some of these.
+                        A collection of classes that are linked to CSS
+                        properties. Feel free to search some of these.
                     </div>
-                    "fixed bg-zinc-700 w-16 h-full group hover:w-36 transition-all z-10"
+                    "fixed bg-zinc-700 w-16 h-full group hover:w-36
+                    transition-all z-10"
                 </span>
                 <span class="text-greaterless">&gt;&lt;</span>
                 <span class="text-element codeproperty group">
-                    <div class="popup">
-                        End navbar.
-                    </div>
+                    <div class="popup">End navbar.</div>
                     /nav
                 </span>
                 <span class="text-greaterless">&gt;</span>
             </div>
-            If you hover over the different parts, you can see what they do. It's set as a <span class="minicode text-string">group</span> so that I can trigger the icons to change to text by scaling down the icons to 0 and the text to 100, so it's all actually there, just layered on top of each other. The transition is set with a duration of 300ms for the expansion of the panel, which is Tailwind's default, and I thought that was fine. The text is set to turn black when hovered, and all of its code is here:
+            If you hover over the different parts, you can see what they do.
+            It's set as a <span class="minicode text-string">group</span> so
+            that I can trigger the icons to change to text by scaling down the
+            icons to 0 and the text to 100, so it's all actually there, just
+            layered on top of each other. The transition is set with a duration
+            of 300ms for the expansion of the panel, which is Tailwind's
+            default, and I thought that was fine. The text is set to turn black
+            when hovered, and all of its code is here:
             <pre>
             <div class="bigcode overflow-scroll mb-4">
 <span class="text-greaterless">&lt;</span><span class="text-element">ul</span> <span class="text-arg">class</span>=<span class="text-string">"text-center"</span><span class="text-greaterless">&gt;</span>
@@ -139,17 +214,49 @@
 <span class="text-greaterless">&lt;</span><span class="text-element">/ul</span><span class="text-greaterless">&gt;</span>
             </div>
             </pre>
-            The important bits are that when hovered (<span class="minicode text-string">hover:</span>) it sets the text to black. This is done with a duration of 500ms. Now the side bar is done, let's move onto the content of the page.
+            The important bits are that when hovered (<span
+                class="minicode text-string"
+                >hover:</span
+            >) it sets the text to black. This is done with a duration of 500ms.
+            Now the side bar is done, let's move onto the content of the page.
         </div>
         <div class="paragraph">
-            There's not too much here, so I'll go over it really quickly. The text is set to take of 50% of the screen, as is the image, and we have the date of creation stuck on the top right. The title's font is <a href="https://fonts.google.com/specimen/Ubuntu" class="link">Ubuntu</a>, and the body text's is <a href="https://fonts.google.com/specimen/Inter" class="link">Inter</a>. What's more interesting are these little code boxes I've stuck throughout the page, like this:
+            There's not too much here, so I'll go over it really quickly. The
+            text is set to take of 50% of the screen, as is the image, and we
+            have the date of creation stuck on the top right. The title's font
+            is
+            <a href="https://fonts.google.com/specimen/Ubuntu" class="link"
+                >Ubuntu</a
+            >, and the body text's is
+            <a href="https://fonts.google.com/specimen/Inter" class="link"
+                >Inter</a
+            >. What's more interesting are these little code boxes I've stuck
+            throughout the page, like this:
             <div class="bigcode mb-14">
                 <span class="codeproperty group">
-                    <div class="popup">Basic hello world in the <a href="https://python.org">Python</a> programming language.</div>
-                    <span class="text-element">print</span>(<span class="text-string">"Hello, World!"</span>)
+                    <div class="popup">
+                        Basic hello world in the
+                        <a href="https://python.org">Python</a> programming
+                        language.
+                    </div>
+                    <span class="text-element">print</span>(<span
+                        class="text-string"
+                        >"Hello, World!"</span
+                    >)
                 </span>
             </div>
-            These are done by creating a <span class="bg-neutral-700 rounded-sm"><span class="text-greaterless font-jetbrains">&lt;</span><span class="text-element font-jetbrains">div</span><span class="text-greaterless font-jetbrains">&gt;</span></span> and then setting it to have a different color compared to the background. I'll pad this a little bit, and then put the text in. The text is done by typing the code into <a href="https://vscodium.com" class="link">VS Codium</a> (Visual Studio Code with less telemetry) and then copying those colors into the Tailwind config file, like this:
+            These are done by creating a
+            <span class="bg-neutral-700 rounded-sm"
+                ><span class="text-greaterless font-jetbrains">&lt;</span
+                ><span class="text-element font-jetbrains">div</span
+                ><span class="text-greaterless font-jetbrains">&gt;</span></span
+            >
+            and then setting it to have a different color compared to the
+            background. I'll pad this a little bit, and then put the text in.
+            The text is done by typing the code into
+            <a href="https://vscodium.com" class="link">VS Codium</a> (Visual
+            Studio Code with less telemetry) and then copying those colors into
+            the Tailwind config file, like this:
             <pre>
             <div class="bigcode"><span class="text-arg">colors:</span> <span class="text-brackets">{</span>
     <span class="text-string">'element'</span><span class="text-arg">:</span> <span class="text-string">'#569CD6'</span>,
@@ -159,23 +266,55 @@
     <span class="text-string">'brackets'</span><span class="text-arg">:</span> <span class="text-string">'#CE9178'</span>,
 <span class="text-brackets">}</span></div>
             </pre>
-            (These code boxes are getting a bit old now!) Then I apply them with Tailwind classes. The font for these is <a href="https://fonts.google.com/specimen/JetBrains+Mono" class="link">Jetbrains Mono</a>. On the blog homepage I also put some boxes, but they look like this:
-            </div><div class="size-64 boxcolor-200 mx-auto rounded-xl overflow-hidden group hover:bg-opacity-10 transition-all duration-700 mt-2">
-                <img src="../assets/blog-images/ATP-2024-05-20.png" width="1000" alt="Drawing of website">
-                <div class="w-full h-14 border-t border-neutral-600 group-hover:bg-transparent transition-all duration-700">
-                    <div class="text-xs absolute translate-x-[204px] translate-y-1 w-12 bg-neutral-600 rounded-sm cursor-default hover:bg-neutral-400 transition-all duration-500">
-                        <div class="text-center">Coding</div>
-                    </div>
-                    <div class="font-bold ml-2">How this page was made</div>
-                    <div class="text-sm text-neutral-500 ml-2">And what I'll put here</div>
+            (These code boxes are getting a bit old now!) Then I apply them with
+            Tailwind classes. The font for these is
+            <a
+                href="https://fonts.google.com/specimen/JetBrains+Mono"
+                class="link"
+                >Jetbrains Mono</a
+            >. On the blog homepage I also put some boxes, but they look like
+            this:
+        </div>
+        <div
+            class="size-64 boxcolor-200 mx-auto rounded-xl overflow-hidden group hover:bg-opacity-10 transition-all duration-700 mt-2"
+        >
+            <img
+                src="../assets/blog-images/ATP-2024-05-20.png"
+                width="1000"
+                alt="Drawing of website"
+            />
+            <div
+                class="w-full h-14 border-t border-neutral-600 group-hover:bg-transparent transition-all duration-700"
+            >
+                <div
+                    class="text-xs absolute translate-x-[204px] translate-y-1 w-12 bg-neutral-600 rounded-sm cursor-default hover:bg-neutral-400 transition-all duration-500"
+                >
+                    <div class="text-center">Coding</div>
                 </div>
-            </div><div class="paragraph">
-            So I don't really want to talk about them until I make better ones. Now that how this page was made has been explained, I'll go over what it'll be used for.
+                <div class="font-bold ml-2">How this page was made</div>
+                <div class="text-sm text-neutral-500 ml-2">
+                    And what I'll put here
+                </div>
+            </div>
+        </div>
+        <div class="paragraph">
+            So I don't really want to talk about them until I make better ones.
+            Now that how this page was made has been explained, I'll go over
+            what it'll be used for.
         </div>
         <div class="title">WHAT WILL THIS PAGE BE USED FOR?</div>
         <div class="paragraph">
-            I made this page for fun, so don't expect frequent posts. I'll probably make a post once I feel like I've learned a topic to the point where I can explain it well enough that I'm confident someone else might benefit from it. It'll also be helpful for me in case I forget anything. I'll just go read my own article! I care about privacy and the internet and coding, so expect to see a lot of that.
+            I made this page for fun, so don't expect frequent posts. I'll
+            probably make a post once I feel like I've learned a topic to the
+            point where I can explain it well enough that I'm confident someone
+            else might benefit from it. It'll also be helpful for me in case I
+            forget anything. I'll just go read my own article! I care about
+            privacy and the internet and coding, so expect to see a lot of that.
         </div>
-        <div class="bg-sky-500 mx-auto text-center w-28 py-2 rounded-full mt-16 mb-20 hover:bg-slate-400 transition-all duration-500"><a href="blog" class="w-full h-full inline-block">Back</a></div>
+        <div
+            class="bg-sky-500 mx-auto text-center w-28 py-2 rounded-full mt-16 mb-20 hover:bg-slate-400 transition-all duration-500"
+        >
+            <a href="blog" class="w-full h-full inline-block">Back</a>
+        </div>
     </body>
 </html>
