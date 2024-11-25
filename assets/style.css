@@ -1,125 +1,18 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-body {
-  background-color: #15141A;
+* {
+  background-color: black;
   color: white;
-  font-family: 'Rubik';
-  justify-content: center;
+  font-family: DepartureMono-Regular;
 }
 
-.center {
-  text-align: center;
+@font-face {
+  font-family: DepartureMono-Regular;
+  src: url(/assets/DepartureMono-Regular.otf);
 }
 
-#title {
-  padding-top: 4em;
-  padding-bottom: 2em;
-  margin-left: 1rem;
+a {
+  color: #0077ff;
 }
 
-.subtitle {
-  color: #999999;
-  font-style: italic;
-  font-size: 12px;
-}
-
-/* Make the box a box */
-
-.centercontent {
-  display: flex;
-  justify-content: center;
-}
-.boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  max-width: 916px;
-}
-
-
-.box {
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  height: 260px;
-  width: 300px;
-  background-color: #49455e22;
-  box-shadow: 0 0 6px rgba(0,0,0,0.25);
-  border-radius: 1em;
-  position: relative;
-  cursor: default;
-  transition: all;
-  transition-duration: 700ms;
-}
-.box:hover {
-  box-shadow: rgb(0, 115, 183) 0px 0px 6px;
-}
-
-/* Make box clickable */
-.boxlink {
+.a-blocks a {
   display: block;
-  height: 12em;
-  width: 12em;
-  text-decoration: none;
-  position: absolute;
-  cursor: default;
-}
-
-.blogbox {
-  background: rgb(230,170,55);
-  background: linear-gradient(130deg, rgba(230,170,55,1) 0%, rgba(255,81,27,1) 84%);
-}
-
-/* TODO: Add the cool box hover effect with the radial gradient */
-
-.boxcolor {
-  background-color: #49455e22;
-}
-
-.boxcolor-200 {
-  background-color: #22212B;
-}
-
-
-.paragraph {
-  @apply mx-auto mt-4 font-inter sm:w-[90%] md:w-1/2 h-auto indent-10;
-}
-
-.title {
-  @apply text-3xl font-ubuntu text-center mb-8;
-}
-
-.link {
-  @apply text-sky-500 underline;
-}
-
-.popup {
-  @apply absolute scale-0 group-hover:scale-100 translate-y-10 text-white w-[45%] transition-all duration-100 origin-top;
-}
-
-.codeproperty {
-  @apply hover:bg-neutral-700 rounded-sm;
-}
-
-.minicode {
-  @apply font-jetbrains bg-neutral-700 rounded-sm px-1;
-}
-
-.bigcode {
-  @apply indent-0 bg-neutral-800 font-jetbrains p-4 rounded-lg mt-4;
-}
-
-.navbar {
-  @apply fixed bg-zinc-700 w-16 md:visible invisible h-full hover:w-36 transition-all z-20;
-}
-
-.navbar-mobile {
-  @apply fixed bg-zinc-700 w-full visible md:invisible h-16 transition-all z-20;
 }
