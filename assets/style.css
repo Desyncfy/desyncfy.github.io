@@ -16,3 +16,14 @@ a {
 .a-blocks a {
   display: block;
 }
+
+@media (min-width: 640px) {
+  .dynamicsize {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .dynamicmdsize {
+    width: 50%;
+  }
+}
