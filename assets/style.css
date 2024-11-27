@@ -81,3 +81,9 @@ li {
     opacity: 0;
   }
 }
+
+/* fix toots */
+.toots {
+  margin-right: auto;
+  margin-left: auto;
+}
