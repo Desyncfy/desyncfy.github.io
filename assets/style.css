@@ -20,13 +20,13 @@ a {
 /* screw the mobile users */
 
 .desktopshow {
-  scale: 0;
+  display: none;
 }
 
 
 
 .desktophide {
-  scale: 1;
+  display: block;
 }
 
 
@@ -51,11 +51,11 @@ a {
   }
 
   .desktopshow {
-    scale: 1;
+    display: flex;
   }
 
   .desktophide {
-    scale: 0;
+    display: none;
   }
 }
 
