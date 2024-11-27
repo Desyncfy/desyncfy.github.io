@@ -14,10 +14,14 @@
 
     <!-- Mastodon!! -->
     <link rel="me" href="https://fosstodon.org/@chickenman" />
+    <link rel="stylesheet" type="text/css" href="https://esm.sh/emfed@1/toots.css">
   </head>
   <body>
+    <script type="module" src="https://esm.sh/emfed@1"></script>
+
     <h1 style="color: orange;">The main page</h1>
-    <img src="assets/Desync.png" style="width: 10%;" class="pixelate">
+    <img src="assets/Desync.png" style="width: 10%;" class="pixelate"><br>
+    <span style="font-size: 2em;">Desync</span><div class="blink"></div>
     <hr>
     <div>Welcome to my silly internet land! You're on the landing page right now, which mainly exists to pass you along to the content as quickly as possible. This mostly exists because I'm too lazy to code something that adheres to modern style guides and stick to it. -Desync</div>
 
@@ -25,19 +29,25 @@
     <div class="a-blocks">
       <a href="blog/evoting.html">E-Voting is Stupid</a>
       <a href="blog/mstdnvbsky.html">Mastodon & Bluesky</a>
-      That's all for now :)
     </div>
     <hr>
     <h2>Silly Things</h2>
-    <div style="display: flex;">
+
+    <!-- Desktop silly things -->
+    <div style="display: flex; height: 455px; width: 100%;" class="desktopshow">
     <!-- Chat box -->
-      <div style="background-color: black;">
-        <iframe src="https://www3.cbox.ws/box/?boxid=3542439&boxtag=aoAaIn" width="350" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+      <div style="border-style: solid; border-color: orange; width: 33%;">
+        <iframe src="https://www3.cbox.ws/box/?boxid=3542439&boxtag=aoAaIn" width="100%" height="100%" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
       </div>
 
-      <div>
-        Egg
+      <div style="border-style: solid; border-color: #6265ff; overflow: scroll; width: 66%;">
+        <a class="mastodon-feed" href="https://fosstodon.org/@chickenman" data-toot-limit="2">Latest Mastodon Posts</a>
       </div>
+    </div>
+
+    <!-- Mobile error (TODO: Mobile support for silly things) -->
+    <div class="desktophide" style="translate: 0px -450px;">
+      These silly things happen to be too silly for your phone. (Because I'm bad at coding, you're still loading it all though)
     </div>
   </body>
 </html>
