@@ -71,10 +71,10 @@ li {
 .blink {
   display: inline-block;
   background-color: white;
-  width: 10px;
-  height: 24px;
+  width: 14px;
+  height: 30px;
   animation: blink 1s step-end infinite;
-  translate: 0px 2px;
+  translate: -10px 4px;
 }
 @keyframes blink {
   50% {
