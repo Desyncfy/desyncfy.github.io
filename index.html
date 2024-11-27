@@ -19,6 +19,8 @@
   <body>
     <script type="module" src="https://esm.sh/emfed@1"></script>
 
+    <script src="assets/main.js"></script>
+
     <h1 style="color: orange;">The main page</h1>
     <img src="assets/Desync.png" style="width: 10%;" class="pixelate"><br>
     <span style="font-size: 2em;">Desync</span><div class="blink"></div>
@@ -40,8 +42,14 @@
         <iframe src="https://www3.cbox.ws/box/?boxid=3542439&boxtag=aoAaIn" width="100%" height="100%" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
       </div>
 
-      <div style="border-style: solid; border-color: #6265ff; overflow: scroll; width: 66%;">
+    <!-- Mastodon Feed -->
+      <div style="border-style: solid; border-color: #6265ff; overflow: scroll; width: 34%;">
         <a class="mastodon-feed" href="https://fosstodon.org/@chickenman" data-toot-limit="2">Latest Mastodon Posts</a>
+      </div>
+
+    <!-- CSS Editor -->
+      <div style="border-style: solid; border-color: #ffc0cb; overflow: hidden; width: 33%;">
+        <textarea style="resize: none; width: 100%; height: 100%; flex: 1; border-style: none;" id="csseditor" spellcheck="false" placeholder="Type CSS here...">/* This is a code editor! Type CSS in here, and your changes will be reflected on the site. */</textarea>
       </div>
     </div>
 
