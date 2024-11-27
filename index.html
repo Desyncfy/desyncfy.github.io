@@ -36,26 +36,40 @@
     <h2>Silly Things</h2>
 
     <!-- Desktop silly things -->
-    <div style="display: flex; height: 455px; width: 100%;" class="desktopshow">
-    <!-- Chat box -->
+    <div style="height: 455px; width: 100%;" class="desktopshow">
+      <!-- Chat box -->
       <div style="border-style: solid; border-color: orange; width: 33%;">
         <iframe src="https://www3.cbox.ws/box/?boxid=3542439&boxtag=aoAaIn" width="100%" height="100%" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
       </div>
 
-    <!-- Mastodon Feed -->
+      <!-- Mastodon Feed -->
       <div style="border-style: solid; border-color: #6265ff; overflow: scroll; width: 34%;">
         <a class="mastodon-feed" href="https://fosstodon.org/@chickenman" data-toot-limit="2">Latest Mastodon Posts</a>
       </div>
 
-    <!-- CSS Editor -->
+      <!-- CSS Editor -->
       <div style="border-style: solid; border-color: #ffc0cb; overflow: hidden; width: 33%;">
         <textarea style="resize: none; width: 100%; height: 100%; flex: 1; border-style: none;" id="csseditor" spellcheck="false" placeholder="Type CSS here..."></textarea>
       </div>
     </div>
 
-    <!-- Mobile error (TODO: Mobile support for silly things) -->
-    <div class="desktophide" style="translate: 0px -450px;">
-      These silly things happen to be too silly for your phone. (Because I'm bad at coding, you're still loading it all though)
+    <!-- Mobile silly things -->
+    <div class="desktophide">
+      <!-- Chat box -->
+      <div style="border-style: solid; border-color: orange; width: 100%; height: 455px;">
+        <iframe src="https://www3.cbox.ws/box/?boxid=3542439&boxtag=aoAaIn" width="100%" height="100%" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+      </div>
+
+      <!-- Mastodon Feed -->
+      <div style="border-style: solid; border-color: #6265ff; overflow: scroll; width: 100%; height: 455px;">
+        <a class="mastodon-feed" href="https://fosstodon.org/@chickenman" data-toot-limit="2">Latest Mastodon Posts</a>
+      </div>
+
+      <!-- CSS Editor -->
+      <div style="border-style: solid; border-color: #ffc0cb; overflow: hidden; width: 100%; height: 455px;">
+        <textarea style="resize: none; width: 100%; height: 100%; flex: 1; border-style: none;" id="csseditor" spellcheck="false" placeholder="Type CSS here..."></textarea>
+      </div>
+
     </div>
   </body>
 </html>
