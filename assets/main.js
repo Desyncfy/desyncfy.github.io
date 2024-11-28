@@ -1,6 +1,7 @@
 // CSS editor stuff.
 document.addEventListener('DOMContentLoaded', () => {
   const csseditor = document.getElementById('csseditor');
+  const csseditormobile = document.getElementById('csseditormobile')
 
   let styleelement = document.createElement('style');
   styleelement.id = 'dynamicstyles';
@@ -9,6 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
   csseditor.addEventListener('input', () => {
     styleelement.textContent = csseditor.value;
   });
+
+  csseditormobile.addEventListener('input', () => {
+    styleelement.textContent = csseditormobile.value;
+  })
 
   // For some reason there's no tabfunctionality = tab variable in a text area so uhh
   csseditor.addEventListener('keydown', (e) => {
