@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   csseditormobile.addEventListener('input', () => {
     // Silly easter egg?
     if (csseditormobile.value === 'rainbow') {
-      styleelement.textContent = "* { background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); }"
+      styleelement.textContent = "* { background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); font-family: Comic Sans MS; }"
     } else {
       styleelement.textContent = csseditormobile.value;
     }
