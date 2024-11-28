@@ -1,5 +1,6 @@
-// CSS editor stuff.
 document.addEventListener('DOMContentLoaded', () => {
+
+  // CSS editor stuff.
   const csseditor = document.getElementById('csseditor');
   const csseditormobile = document.getElementById('csseditormobile')
 
@@ -8,11 +9,22 @@ document.addEventListener('DOMContentLoaded', () => {
   document.head.appendChild(styleelement);
 
   csseditor.addEventListener('input', () => {
-    styleelement.textContent = csseditor.value;
+    // Silly easter egg?
+    if (csseditor.value === 'rainbow') {
+      styleelement.textContent = "* { background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); font-family: Comic Sans MS; }"
+    } else {
+      styleelement.textContent = csseditor.value;
+    }
   });
 
   csseditormobile.addEventListener('input', () => {
-    styleelement.textContent = csseditormobile.value;
+    // Silly easter egg?
+    if (csseditormobile.value === 'rainbow') {
+      styleelement.textContent = "* { background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); }"
+    } else {
+      styleelement.textContent = csseditormobile.value;
+    }
+
   })
 
   // For some reason there's no tabfunctionality = tab variable in a text area so uhh
@@ -31,4 +43,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
-
