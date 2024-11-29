@@ -88,6 +88,10 @@ li {
   margin-left: auto;
 }
 
+.permalink {
+  translate: 0px !important;
+}
+
 /* I hate Tenor */
 .tenor-gif-embed {
   margin-left: auto;
