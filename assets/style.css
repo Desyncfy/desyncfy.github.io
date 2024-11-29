@@ -17,7 +17,7 @@ a {
   display: block;
 }
 
-/* screw the mobile users */
+/* Mobile support ish */
 
 .desktopshow {
   display: none;
@@ -29,6 +29,11 @@ a {
   display: block;
 }
 
+.permalink {
+    translate: 0px -24px !important;
+    float: left !important;
+    position: absolute !important;
+  }
 
 /* Awesome styling stolen from Tailwind */
 @media (min-width: 640px) {
@@ -56,6 +61,12 @@ a {
 
   .desktophide {
     display: none;
+  }
+
+  .permalink {
+    translate: 0px !important;
+    float: right !important;
+    position: relative !important;
   }
 }
 
@@ -88,9 +99,11 @@ li {
   margin-left: auto;
 }
 
-.permalink {
-  translate: 0px !important;
+.toot {
+  border-bottom: 0px !important;
 }
+
+
 
 /* I hate Tenor */
 .tenor-gif-embed {
