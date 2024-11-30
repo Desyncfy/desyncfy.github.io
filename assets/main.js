@@ -77,6 +77,12 @@ document.addEventListener('DOMContentLoaded', () => {
         };
       };
     };
+    if (e.key === 'Enter') {
+      // fetch the text after the first 16 characters
+      let promptParsed = prompt.textContent.slice(16);
+      eval(promptParsed);
+      prompt.textContent = prompt.textContent.slice(0, 16);
+    };
   };
 });
 
