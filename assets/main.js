@@ -6,7 +6,7 @@ function disableName() {
   return null;
 }
 
-let name = disableName();
+let prompt = disableName();
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -55,15 +55,15 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // Type in name
   document.onkeydown = (e) => {
-    if (name) {
+    if (prompt) {
       if (e.key.length === 1) {
         e.preventDefault();
-        name.textContent += e.key;
+        prompt.textContent += e.key;
       };
       if (e.key === 'Backspace') {
         e.preventDefault();
-        if (name.textContent.length > 16) {
-          name.textContent = name.textContent.slice(0, -1);
+        if (prompt.textContent.length > 16) {
+          prompt.textContent = prompt.textContent.slice(0, -1);
         };
       };
     };
