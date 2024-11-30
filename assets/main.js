@@ -8,6 +8,8 @@ function disableName() {
 
 let prompt = disableName();
 
+let editorFocused = false;
+
 document.addEventListener('DOMContentLoaded', () => {
 
   // CSS editor stuff.
@@ -52,10 +54,18 @@ document.addEventListener('DOMContentLoaded', () => {
       csseditor.selectionStart = csseditor.selectionEnd = start + 4;
     }
   });
+  csseditor.addEventListener('focus', function() {
+    editorFocused = true;
+  });
   
+
+  // I want to shoot the guy who decided to call exiting focus blur. IT DOESN'T BLUR
+  csseditor.addEventListener('blur', function() {
+    editorFocused = false;
+  });
   // Type in name
   document.onkeydown = (e) => {
-    if (prompt) {
+    if (prompt && !editorFocused) {
       if (e.key.length === 1) {
         e.preventDefault();
         prompt.textContent += e.key;
