@@ -6,7 +6,7 @@ function disableName() {
   return null;
 }
 
-let prompt = enableName();
+let prompt = document.getElementById('name');
 
 let editorFocused = false;
 
