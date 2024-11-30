@@ -111,3 +111,12 @@ li {
   margin-right: auto;
   display: block;
 }
+
+
+.smallposts {
+  white-space: pre-line;
+}
+
+.smallposts span {
+  color: gray;
+}
