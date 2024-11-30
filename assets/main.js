@@ -1,3 +1,13 @@
+function enableName() {
+  return document.getElementById('name');
+}
+
+function disableName() {
+  return null;
+}
+
+let name = disableName();
+
 document.addEventListener('DOMContentLoaded', () => {
 
   // CSS editor stuff.
@@ -42,4 +52,22 @@ document.addEventListener('DOMContentLoaded', () => {
       csseditor.selectionStart = csseditor.selectionEnd = start + 4;
     }
   });
+  
+  // Type in name
+  document.onkeydown = (e) => {
+    if (name) {
+      if (e.key.length === 1) {
+        e.preventDefault();
+        name.textContent += e.key;
+      };
+      if (e.key === 'Backspace') {
+        e.preventDefault();
+        if (name.textContent.length > 16) {
+          name.textContent = name.textContent.slice(0, -1);
+        };
+      };
+    };
+  };
 });
+
+

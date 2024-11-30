@@ -85,7 +85,7 @@ li {
   width: 14px;
   height: 30px;
   animation: blink 1s step-end infinite;
-  translate: -10px 4px;
+  translate: 0px 4px;
 }
 @keyframes blink {
   50% {
