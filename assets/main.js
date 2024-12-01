@@ -72,16 +72,16 @@ document.addEventListener('DOMContentLoaded', () => {
       };
       if (e.key === 'Backspace') {
         e.preventDefault();
-        if (prompt.textContent.length > 16) {
+        if (prompt.textContent.length > 17) {
           prompt.textContent = prompt.textContent.slice(0, -1);
         };
       };
     };
     if (e.key === 'Enter') {
-      // fetch the text after the first 16 characters
-      let promptParsed = prompt.textContent.slice(16);
+      // fetch the text after the first 17 characters
+      let promptParsed = prompt.textContent.slice(17);
       eval(promptParsed);
-      prompt.textContent = prompt.textContent.slice(0, 16);
+      prompt.textContent = prompt.textContent.slice(0, 17);
     };
   };
 });
