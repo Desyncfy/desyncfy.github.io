@@ -120,3 +120,19 @@ li {
 .smallposts span {
   color: gray;
 }
+
+/* Calendar */
+
+.calendar-container {
+  background-color: salmon;
+  color: black;
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.openable {
+  background-color: palegreen;
+}
