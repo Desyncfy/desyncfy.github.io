@@ -1,0 +1,28 @@
+user-agent: *
+disallow: 
+
+# go away ai
+User-agent: anthropic-ai
+User-agent: AwarioRssBot
+User-agent: AwarioSmartBot
+User-agent: Bytespider
+User-agent: CCBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-Web
+User-agent: cohere-ai
+User-agent: DataForSeoBot
+User-agent: Diffbot
+User-agent: FacebookBot
+User-agent: Google-Extended
+User-agent: GPTBot
+User-agent: magpie-crawler
+User-agent: NewsNow
+User-agent: news-please
+User-agent: OAI-SearchBot
+User-agent: omgili
+User-agent: omgilibot
+User-agent: PerplexityBot
+User-agent: Scrapy
+User-agent: TurnitinBot
+disallow: /

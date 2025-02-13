@@ -1,7 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+@font-face {
+  font-family: Departure Mono;
+  src: url("DepartureMonoNerdFont-Regular.otf") format("opentype");
+}
 
+/* Fix weird bug that I can't figure out the cause of */
 * {
-  font-family: fira code;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: Departure Mono;
   color: white;
-  background-color: #1e1e1e
+  background-color: #1e1e1e;
+  text-align: center;
+}
+
+.button {
+  background-color: #00aaff;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  color: white !important;
+}
+
+#title {
+  text-shadow: 0px 0px 5px #777777;
+  font-size: 2.5rem;
+}
+
+
+/* A tag */
+a:visited {
+  color: #00aaff;
+}
+
+a {
+  text-decoration: none;
+  color: #00aaff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#portfolio {
+  margin-top: 1rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #777777;
+  box-sizing: border-box;
+}
+
+@media (width >= 48rem) {
+  #portfolio {
+    width: 33%;
+  }
+  #contact a {
+    display: inline !important;
+  }
+}
+
+#portfolio .item:hover {
+  background-color: #111111;
+  border-color: #0066bb;
+}
+
+#portfolio .item {
+  border: 2px solid #00aaff;
+  padding: 0.5rem;
+  width: 100%;
+  display: block;
+  border-top: none;
+  text-align: center;
+}
+
+.item-top {
+  border-top: 2px solid #00aaff !important;
+}
+
+
+#contact a {
+  color: #777777;
+  display: block;
+}
+
+
+#contact {
+  margin-top: 2rem;
 }
