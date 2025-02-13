@@ -18,10 +18,14 @@
 }
 
 .button {
-  background-color: #00aaff;
   padding: 0.5rem;
   margin-top: 0.5rem;
-  color: white !important;
+  border: 2px solid #00aaff;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: #111111;
 }
 
 #title {
