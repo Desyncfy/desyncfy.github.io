@@ -1,0 +1,56 @@
+<!-- Start page for my browser -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/Desync.png">
+    <title>Start</title>
+    <link href="assets/style.css" rel="stylesheet">
+    <meta name="description" content="Desync's website.">
+    <meta name="keywords" content="desync, programming, desyncfy, desync.d, linux, coding, code, foss, open source, oss, floss">
+  </head>
+  <body>
+    <h1 id="title">
+      <span style="color: lightblue;">sudo</span> 
+      <span style="color: skyblue;">systemctl</span>
+      <span style="color: orange;">enable</span> 
+      --now 
+      <span style="color: palevioletred;">startpage.service</span>
+
+    </h1>
+
+    <div id="search">
+      <input placeholder="Search..." width="100%" id="search-input" autofocus>
+      <button class="button" onclick="search()"></button>
+    </div>
+
+    <div id="contact">
+      <a href="https://desyncd.xyz"> Home</a>
+      <a target="_blank" href="https://github.com/desyncfy"> Github</a>
+      <a target="_blank" rel="me" href="https://social.desyncd.xyz/@desync"> Mastodon</a>
+      <a target="_blank" href="mailto:desync@desyncd.xyz">󰛮 E-Mail</a>
+    </div>
+
+
+    <script>
+      // AAAAAA
+      let searchinput = document.getElementById("search-input");
+      searchinput.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          search();
+        }
+      });
+
+
+      function search() {
+        let search = document.getElementById("search-input").value;
+        window.location.href = `https://rebang.online/?q=${search}`;
+      };
+
+      
+    </script>
+  </body>
+</html>
