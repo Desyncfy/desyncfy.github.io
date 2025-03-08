@@ -101,7 +101,7 @@ a:hover {
   border: none;
   color: white;
   font-family: Departure Mono;
-  width: 85%;
+  width: 80%;
 }
 
 #search input:focus {
@@ -112,7 +112,7 @@ a:hover {
   font-family: Departure Mono;
   background-color: #1e1e1e;
   color: white;
-  width: 3rem;
+  width: 15%;
   height: 3rem;
   cursor: pointer;
 }
@@ -130,7 +130,7 @@ a:hover {
 
 
 /* AAAAAA */
-@media (width <= 74rem) {
+@media (width <= 48rem) {
   #search {
     width: 100%;
   }
@@ -138,6 +138,6 @@ a:hover {
     font-size: 2rem;
   }
   #search button {
-    width: 85%
+    width: 80%
   }
 }
