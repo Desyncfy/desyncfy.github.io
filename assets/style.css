@@ -143,3 +143,23 @@ a:hover {
     width: 80%
   }
 }
+
+
+#warning {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #66590a;
+  border-color: #8c7c13;
+  border-width: 2px;
+  border-style: solid;
+}
+
+li {
+  list-style: none;
+  color: palegreen;
+}
+
+h2 {
+  margin-top: 2rem;
+}
