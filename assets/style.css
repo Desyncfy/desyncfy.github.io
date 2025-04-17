@@ -30,7 +30,7 @@
 
 #title {
   text-shadow: 0px 0px 5px #777777;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 
@@ -110,40 +110,55 @@ a:hover {
   outline: none;
 }
 
-#search button {
+.button {
   font-family: Departure Mono;
   background-color: #1e1e1e;
   color: white;
-  width: 15%;
+  width: 80%;
   height: 3rem;
   cursor: pointer;
 }
 
 #search {
-  width: 33%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
 }
 
-#search button:hover {
+.button:hover {
   background-color: #111;
+}
+
+#buttons {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#buttons .button {
+  width: 80%;
 }
 
 
 /* AAAAAA */
-@media (width <= 48rem) {
+@media (width >= 72rem) {
   #search {
-    width: 100%;
+    width: 33%;
+  }
+  #buttons {
+    width: 33% !important;
   }
   #title {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   #search button {
-    width: 80%
+    width: 15%
+  }
+  #buttons .button {
+    width: 47.5%;
   }
 }
-
 
 #warning {
   width: 50%;

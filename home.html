@@ -23,7 +23,12 @@
 
     <div id="search">
       <input placeholder="Search..." width="100%" id="search-input" autofocus>
-      <button class="button" onclick="search()"></button>
+      <button class="button" onclick="search(false)"></button>
+    </div>
+    <div id="buttons">
+      <button class="button" onclick="swapengine()" id="rbang"> Use DuckDuckGo</button>
+      <button class="button" onclick="swapengine()" id="ddg" style="display: none;"> Use Rebang</button>
+      <button class="button" onclick="search(true)"> I'm feeling Lucky</button>
     </div>
 
     <div id="contact">
@@ -35,6 +40,10 @@
 
 
     <script>
+      if (!window.localStorage.getItem("engine")) {
+        window.localStorage.setItem("engine", "rebang.online")
+      }
+      let engine = window.localStorage.getItem("engine")
       // AAAAAA
       let searchinput = document.getElementById("search-input");
       searchinput.addEventListener("keypress", function(event) {
@@ -45,10 +54,32 @@
       });
 
 
-      function search() {
-        let search = document.getElementById("search-input").value;
-        window.location.href = `https://rebang.online/?q=${search}`;
+      function search(lucky) {
+        if (!lucky) {
+          let search = document.getElementById("search-input").value;
+          window.location.href = `https://${engine}/?q=${search}`;
+        } else {
+          let search = document.getElementById("search-input").value;
+          window.location.href = `https://${engine}/?q=${search} !`;
+        }
       };
+
+
+      function swapengine() {
+          if (engine == 'rebang.online') {
+            engine = 'duckduckgo.com'
+            window.localStorage.setItem("engine","duckduckgo.com")
+            document.getElementById("rbang").style.display = "none"
+            document.getElementById("ddg").style.display = "inline"
+          } else {
+            engine = 'rebang.online'
+            window.localStorage.setItem("engine","rebang.online")
+            document.getElementById("ddg").style.display = "none"
+            document.getElementById("rbang").style.display = "inline"
+          }
+      }
+
+      swapengine(); swapengine()
 
       
     </script>
