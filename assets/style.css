@@ -92,9 +92,10 @@ a:hover {
 
 
 #contact {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
+  margin-top: 1rem;
 }
 
 #search input {
@@ -140,6 +141,47 @@ a:hover {
   width: 80%;
 }
 
+#warning {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #66590a;
+  border-color: #8c7c13;
+  border-width: 2px;
+  border-style: solid;
+}
+
+li {
+  list-style: none;
+  color: palegreen;
+}
+
+h2 {
+  margin-top: 2rem;
+}
+
+.para {
+  width: 90%;
+  margin: 0 auto 0 auto;
+}
+
+
+.para_dark {
+  width: 85%;
+  margin: 0 auto 0 auto;
+}
+
+.para_dark li:nth-child(odd) {
+  background-color: #222;
+}
+
+.para_dark li:nth-child(even) {
+  background-color: #111;
+}
+
+.unfinished li {
+  color: palevioletred
+}
 
 /* AAAAAA */
 @media (width >= 72rem) {
@@ -158,23 +200,22 @@ a:hover {
   #buttons .button {
     width: 47.5%;
   }
+
+  .para {
+    width: 66.6666%
+  }
+
+  .para_dark {
+    width: 50%
+  }
+
+  #warning {
+    width: 50%
+  }
+
+  #contact {
+    position: absolute;
+    margin-top: 0;
+  }
 }
 
-#warning {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #66590a;
-  border-color: #8c7c13;
-  border-width: 2px;
-  border-style: solid;
-}
-
-li {
-  list-style: none;
-  color: palegreen;
-}
-
-h2 {
-  margin-top: 2rem;
-}
