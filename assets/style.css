@@ -151,7 +151,7 @@ a:hover {
   border-style: solid;
 }
 
-li {
+.para_dark li {
   list-style: none;
   color: palegreen;
 }
@@ -219,3 +219,8 @@ h2 {
   }
 }
 
+
+.gist-data, .gist-meta {
+  background-color: #111 !important;
+  color: white;
+}
