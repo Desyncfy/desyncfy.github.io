@@ -217,10 +217,29 @@ h2 {
     position: absolute;
     margin-top: 0;
   }
+
+  .dynamicsize {
+    width: 66.6666%
+  }
 }
 
 
 .gist-data, .gist-meta {
   background-color: #111 !important;
   color: white;
+}
+
+.old-post {
+  border-color: gray !important;
+  color: #333 !important;
+}
+
+.old-post a {
+  color: gray !important;
+}
+
+.main {
+  text-align: left;
+  width: 90%;
+  margin: 0 auto 0 auto;
 }
