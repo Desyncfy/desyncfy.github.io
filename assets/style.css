@@ -1,5 +1,5 @@
 @font-face {
-  font-family: Departure Mono, monospace;
+  font-family: Departure Mono;
   src: url("DepartureMonoNerdFont-Regular.otf") format("opentype");
 }
 
@@ -11,7 +11,7 @@
 }
 
 :root {
-  font-family: Departure Mono;
+  font-family: Departure Mono, monospace;
   color: white;
   background-color: #1e1e1e;
   text-align: center;
