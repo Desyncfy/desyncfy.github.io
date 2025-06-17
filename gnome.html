@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GNOME 50</title>
+</head>
+<body>
+  <h1>Welcome to GNOME 50<span class="asterix" id="important-asterix">*</span></h1>
+  <div><span class="asterix">*</span>Not really.</div><br>
+  <div>This is a concept design for GNOME 50, designed as a fun side-project.</div>
+  <a href="gnome/index.html">Enter GNOME 50</a>
+  <h2>Flaws</h2>
+  <div>
+    Obviously, this design isn't very good for accessibility. I have no argument against that; it sucks. Were any of this to be taken into consideration for an an actual desktop, it'd have to have a toggle for most of the effects.
+    <br><br>
+    Oh, and for what it's worth, I actually use Hyprland.
+    <div style="width: 100%;" id="hover">(With many AGS widgets and nwg-drawer, I do miss GNOME in many aspects but it was too buggy and had some weird design decisions.)</div>
+  </div>
+  <style>
+/* Portal page warrants absolutely zero proper programming. */
+  @font-face {
+    font-family: Adwaita Sans;
+    src: url("assets/AdwaitaSans-Regular.ttf");
+  }
+
+  :root {
+    background-color: #353739;
+    color: white;
+    font-family: Adwaita Sans;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+  h1 {
+    font-size: 6em;
+  }
+  h2 {
+    font-size: 4em;
+  }
+
+  .asterix {
+    display: inline-block;
+  }
+
+  #important-asterix:hover {
+    animation: colours 2s ease-in-out;
+  }
+  @keyframes colours {
+    0% {
+      background-image: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+      background-clip: text;
+      color: transparent;
+    }
+    99% {
+      background-position:100% 0%;
+    }
+    100% {
+      background-image: initial;
+      background-clip: none;
+      color: white;
+    }
+  }
+  a {
+    background-color: #3584e4;
+    padding: 18px;
+    margin: 18px;
+    margin-top: 8em;
+    border-radius: 50em;
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+  div {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #hover {
+    background-color: #1e1e1e;
+    color: #1e1e1e;
+    border-radius: 6px;
+    transition: all 500ms;
+    margin-top: 1em;
+  }
+
+  #hover:hover {
+    background-color: #888;
+    color: white;
+  }
+  </style>
+</body>
+</html>
