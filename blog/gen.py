@@ -26,7 +26,7 @@ header = f"""<!DOCTYPE html>
     <h3 style="color: gray;">{datetime.today().strftime('%Y/%m/%d')}</h3>
     <hr>"""
 
-end = f"""      <br><br><a style="background-color: #00bbff; border-radius: 0px; padding: 10px; border-width: 2px; border-style: outset; color: white; text-decoration-line: none;" href="blog.html">Return Back</a>
+end = f"""      <br><br><a style="background-color: #00bbff; border-radius: 0px; padding: 10px; color: white; text-decoration-line: none;" href="blog.html">Return Back</a>
   </div>
   </body>
 </html>"""

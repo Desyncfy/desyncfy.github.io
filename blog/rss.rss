@@ -5,6 +5,13 @@
     <link>https://desyncd.xyz/blog/blog.html</link>
     <description>My blog for talking about things sometimes</description>
     <language>en-us</language>
+    <image>
+      <title>Desync's Blog</title>
+      <link>https://desyncd.xyz/blog/blog.html</link>
+      <url>https://www.desyncd.xyz/assets/Desync.png</url>
+      <width>768</width>
+      <height>768</height>
+    </image>
     <item>
       <title>Talking to the Internet</title>
       <link>https://www.desyncd.xyz/blog/talking-to-the-internet.html</link>
