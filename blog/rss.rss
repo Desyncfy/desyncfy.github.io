@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Desync's Blog</title>
+    <link>https://desyncd.xyz/blog/blog.html</link>
+    <description>My blog for talking about things sometimes</description>
+    <language>en-us</language>
+    <item>
+      <title>Talking to the Internet</title>
+      <link>https://www.desyncd.xyz/blog/talking-to-the-internet.html</link>
+      <guid>https://www.desyncd.xyz/blog/talking-to-the-internet.html</guid>
+      <pubDate>Sat, 31 May 2025 00:00:00 -0700</pubDate>
+      <description>I see a lot of people get it wrong when they're trying to talk to the internet, so here are some tips.</description>
+    </item>
+    <item>
+      <title>The Rules for Software Alternatives</title>
+      <link>https://www.desyncd.xyz/blog/alternatives.html</link>
+      <guid>https://www.desyncd.xyz/blog/alternatives.html</guid>
+      <pubDate>Sat, 25 April 2025 00:00:00 -0700</pubDate>
+      <description>A list of features that a software alternative should have.</description>
+    </item>
+  </channel>
+</rss>
