@@ -22,3 +22,39 @@ body {
     margin: 4rem 0px 0px 4rem;
   }
 }
+
+#soon {
+  text-align: center;
+  margin-top: 12rem;
+  display: inline-block;
+  animation: spin 30s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+.web {
+  background-image: linear-gradient(90deg, #FDBB2D 0%, #22C1C3 100%);
+  background-size: 400% 400%;
+  animation: move 15s linear infinite;
+  background-clip: text;
+  color: transparent;
+}
+
+@keyframes move {
+  0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
