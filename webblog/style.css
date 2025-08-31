@@ -1,0 +1,24 @@
+@font-face {
+  src: url("../assets/DepartureMonoNerdFont-Regular.otf");
+  font-family: Departure Mono;
+}
+
+:root {
+  background-color: #1e1e1e;
+  color: whitesmoke;
+  font-family: Departure Mono, monospace;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  margin: 12px 0 0 12px;
+}
+
+@media (width >= 48rem) {
+  body {
+    margin: 4rem 0px 0px 4rem;
+  }
+}

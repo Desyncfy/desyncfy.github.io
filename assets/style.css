@@ -243,3 +243,8 @@ h2 {
   width: 90%;
   margin: 0 auto 0 auto;
 }
+
+blockquote {
+  border-left: 4px solid #3b434b;
+  padding: 0 15px;
+}

@@ -28,6 +28,25 @@ header = f"""<!DOCTYPE html>
 
 end = f"""      <br><br><a style="background-color: #00bbff; border-radius: 0px; padding: 10px; color: white; text-decoration-line: none;" href="blog.html">Return Back</a>
   </div>
+
+
+
+
+
+
+  <!-- Default Statcounter code for My Website https://desyncd.xyz -->
+<script type="text/javascript">
+var sc_project=13163367; 
+var sc_invisible=1; 
+var sc_security="4a68bf53"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="web statistics"
+href="https://statcounter.com/" target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/13163367/0/4a68bf53/1/" alt="web statistics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
   </body>
 </html>"""
 
