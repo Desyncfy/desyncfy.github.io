@@ -1,6 +1,7 @@
 from datetime import datetime
 from markdown import markdown
 
+file = input("File location: ")
 title = input("Title: ")
 description = input("Description: ")
 header = f"""<!DOCTYPE html>
@@ -50,7 +51,7 @@ referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
   </body>
 </html>"""
 
-with open('input.md', 'r') as f:
+with open(file, 'r') as f:
     content = f.read()
     # Convert to HTML
     content = markdown(content)

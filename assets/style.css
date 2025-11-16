@@ -238,8 +238,10 @@ h2 {
 }
 
 blockquote {
-  border-left: 4px solid #3b434b;
+  border: 2px solid #3b434b;
+  background-color: #222222;
   padding: 0 15px;
+  margin-top: 15px;
 }
 
 
