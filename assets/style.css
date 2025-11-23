@@ -264,3 +264,7 @@ blockquote {
 		background-position: 0% 50%;
 	}
 }
+
+.giscus {
+  margin-top: 1em;
+}
