@@ -29,6 +29,7 @@ header = f"""<!DOCTYPE html>
 
 end = f"""      <br><br><a style="background-color: #00bbff; border-radius: 0px; padding: 10px; color: white; text-decoration-line: none;" href="blog.html">Return Back</a>
   </div>
+  <div class="giscus"></div>
 
 
 
@@ -48,6 +49,22 @@ href="https://statcounter.com/" target="_blank"><img class="statcounter"
 src="https://c.statcounter.com/13163367/0/4a68bf53/1/" alt="web statistics"
 referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 <!-- End of Statcounter Code -->
+<!-- Giscus -->
+<script src="https://giscus.app/client.js"
+        data-repo="desyncfy/desyncfy.github.io"
+        data-repo-id="R_kgDOL3Pgmg"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOL3Pgms4CyGrU"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="dark"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
   </body>
 </html>"""
 
