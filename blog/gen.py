@@ -22,7 +22,7 @@ header = f"""<!DOCTYPE html>
     <meta name="fediverse:creator" content="@desync@social.desyncd.xyz">
   </head>
   <body>
-  <div style="text-align: center; margin: auto;" class="dynamicsize dynamicmdsize">
+  <div style="text-align: center; margin: auto;" class="dynamicsize dynamicmdsize blog-text">
     <h1>{title}</h1>
     <h3 style="color: gray;">{datetime.today().strftime('%Y/%m/%d')}</h3>
     <hr>"""
