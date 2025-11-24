@@ -56,6 +56,10 @@ const phrases = [
   "the NDP should try harder",
   "mi toki e toki pona",
   "je parle français*",
-  "also see: https://www.dementiaman.com"
+  "also see: https://www.dementiaman.com",
+  "why do we build the wall? We build the wall to keep us free!",
+  "begrudgingly made in Canada",
+  "don't play with matches",
+  "what if we just got rid of money?"
 ]
 phraseElement.innerText = `"${phrases[Math.floor(Math.random() * phrases.length)]}"`
